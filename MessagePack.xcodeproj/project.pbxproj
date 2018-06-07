@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C215887A1DE9D99200B548D2 /* MessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21588701DE9D99100B548D2 /* MessagePack.framework */; };
+		C215887F1DE9D99200B548D2 /* MessagePackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215887E1DE9D99200B548D2 /* MessagePackTests.swift */; };
+		C21588811DE9D99200B548D2 /* MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = C21588731DE9D99100B548D2 /* MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C215888B1DE9D9A700B548D2 /* MessagePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215888A1DE9D9A700B548D2 /* MessagePack.swift */; };
+		C215888D1DE9DA1A00B548D2 /* MessagePackFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215888C1DE9DA1A00B548D2 /* MessagePackFormat.swift */; };
+		C21588961DE9E23000B548D2 /* MessagePackNilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21588951DE9E23000B548D2 /* MessagePackNilTests.swift */; };
+		C215889C1DE9E68000B548D2 /* MessagePackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C215889B1DE9E68000B548D2 /* MessagePackError.swift */; };
+		C21588A71DE9E90200B548D2 /* MessagePackFalseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21588A41DE9E90200B548D2 /* MessagePackFalseTests.swift */; };
+		C21588A91DE9E90200B548D2 /* MessagePackTrueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21588A51DE9E90200B548D2 /* MessagePackTrueTests.swift */; };
+		C2161E311DED9D980024F279 /* MessagePackMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161E301DED9D980024F279 /* MessagePackMapTests.swift */; };
+		C2161E331DEDA1580024F279 /* MessagePackStdLibExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161E321DEDA1580024F279 /* MessagePackStdLibExt.swift */; };
+		C2161E3C1DEDB30B0024F279 /* MessagePackStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161E3B1DEDB30B0024F279 /* MessagePackStringTests.swift */; };
+		C27C49831DF03274008941BF /* MessagePackArray16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C495B1DF03274008941BF /* MessagePackArray16.swift */; };
+		C27C49851DF03274008941BF /* MessagePackArray32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C495C1DF03274008941BF /* MessagePackArray32.swift */; };
+		C27C49871DF03274008941BF /* MessagePackFixArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C495D1DF03274008941BF /* MessagePackFixArray.swift */; };
+		C27C49891DF03274008941BF /* MessagePackGenericArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C495E1DF03274008941BF /* MessagePackGenericArray.swift */; };
+		C27C498B1DF03274008941BF /* MessagePackBin16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49601DF03274008941BF /* MessagePackBin16.swift */; };
+		C27C498D1DF03274008941BF /* MessagePackBin32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49611DF03274008941BF /* MessagePackBin32.swift */; };
+		C27C498F1DF03274008941BF /* MessagePackBin8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49621DF03274008941BF /* MessagePackBin8.swift */; };
+		C27C49911DF03274008941BF /* MessagePackGenericBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49631DF03274008941BF /* MessagePackGenericBin.swift */; };
+		C27C49931DF03274008941BF /* MessagePackFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49651DF03274008941BF /* MessagePackFalse.swift */; };
+		C27C49951DF03274008941BF /* MessagePackTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49661DF03274008941BF /* MessagePackTrue.swift */; };
+		C27C49971DF03274008941BF /* MessagePackFloat32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49681DF03274008941BF /* MessagePackFloat32.swift */; };
+		C27C49991DF03274008941BF /* MessagePackFloat64.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49691DF03274008941BF /* MessagePackFloat64.swift */; };
+		C27C499B1DF03274008941BF /* MessagePackInt16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C496B1DF03274008941BF /* MessagePackInt16.swift */; };
+		C27C499D1DF03274008941BF /* MessagePackInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C496C1DF03274008941BF /* MessagePackInt32.swift */; };
+		C27C499F1DF03274008941BF /* MessagePackInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C496D1DF03274008941BF /* MessagePackInt64.swift */; };
+		C27C49A11DF03274008941BF /* MessagePackInt8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C496E1DF03274008941BF /* MessagePackInt8.swift */; };
+		C27C49A31DF03274008941BF /* MessagePackNegativeFixint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C496F1DF03274008941BF /* MessagePackNegativeFixint.swift */; };
+		C27C49A51DF03274008941BF /* MessagePackFixMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49711DF03274008941BF /* MessagePackFixMap.swift */; };
+		C27C49A71DF03274008941BF /* MessagePackGenericMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49721DF03274008941BF /* MessagePackGenericMap.swift */; };
+		C27C49A91DF03274008941BF /* MessagePackMap16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49731DF03274008941BF /* MessagePackMap16.swift */; };
+		C27C49AB1DF03274008941BF /* MessagePackMap32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49741DF03274008941BF /* MessagePackMap32.swift */; };
+		C27C49AD1DF03274008941BF /* MessagePackNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49761DF03274008941BF /* MessagePackNil.swift */; };
+		C27C49AF1DF03274008941BF /* MessagePackFixString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49781DF03274008941BF /* MessagePackFixString.swift */; };
+		C27C49B11DF03274008941BF /* MessagePackGenericString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49791DF03274008941BF /* MessagePackGenericString.swift */; };
+		C27C49B31DF03274008941BF /* MessagePackString16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C497A1DF03274008941BF /* MessagePackString16.swift */; };
+		C27C49B51DF03274008941BF /* MessagePackString32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C497B1DF03274008941BF /* MessagePackString32.swift */; };
+		C27C49B71DF03274008941BF /* MessagePackString8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C497C1DF03274008941BF /* MessagePackString8.swift */; };
+		C27C49B91DF03274008941BF /* MessagePackPositiveFixint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C497E1DF03274008941BF /* MessagePackPositiveFixint.swift */; };
+		C27C49BB1DF03274008941BF /* MessagePackUInt16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C497F1DF03274008941BF /* MessagePackUInt16.swift */; };
+		C27C49BD1DF03274008941BF /* MessagePackUInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49801DF03274008941BF /* MessagePackUInt32.swift */; };
+		C27C49BF1DF03274008941BF /* MessagePackUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49811DF03274008941BF /* MessagePackUInt64.swift */; };
+		C27C49C11DF03274008941BF /* MessagePackUInt8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49821DF03274008941BF /* MessagePackUInt8.swift */; };
+		C27C49C41DF03AE0008941BF /* MessagePackDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C49C31DF03AE0008941BF /* MessagePackDataHelpers.swift */; };
+		C29760261DEA7D8800AE2B35 /* MessagePackUIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29760251DEA7D8800AE2B35 /* MessagePackUIntTests.swift */; };
+		C2D80A131DF1839E00159BFB /* MessagePackIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D80A121DF1839E00159BFB /* MessagePackIntTests.swift */; };
+		C2D80A151DF1897000159BFB /* MessagePackFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D80A141DF1897000159BFB /* MessagePackFloatTests.swift */; };
+		C2D80A171DF18D8A00159BFB /* MessagePackBinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D80A161DF18D8A00159BFB /* MessagePackBinTests.swift */; };
+		C2DE603B1DEAD59E0096FB11 /* MessagePackArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DE603A1DEAD59E0096FB11 /* MessagePackArrayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C215887B1DE9D99200B548D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C21588671DE9D99100B548D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C215886F1DE9D99100B548D2;
+			remoteInfo = MessagePack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C21588701DE9D99100B548D2 /* MessagePack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessagePack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21588731DE9D99100B548D2 /* MessagePack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagePack.h; sourceTree = "<group>"; };
+		C21588741DE9D99100B548D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C21588791DE9D99200B548D2 /* MessagePackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagePackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C215887E1DE9D99200B548D2 /* MessagePackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePackTests.swift; sourceTree = "<group>"; };
+		C21588801DE9D99200B548D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C215888A1DE9D9A700B548D2 /* MessagePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePack.swift; sourceTree = "<group>"; };
+		C215888C1DE9DA1A00B548D2 /* MessagePackFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFormat.swift; sourceTree = "<group>"; };
+		C21588951DE9E23000B548D2 /* MessagePackNilTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackNilTests.swift; path = Formats/MessagePackNilTests.swift; sourceTree = "<group>"; };
+		C215889B1DE9E68000B548D2 /* MessagePackError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackError.swift; sourceTree = "<group>"; };
+		C21588A41DE9E90200B548D2 /* MessagePackFalseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackFalseTests.swift; path = Formats/MessagePackFalseTests.swift; sourceTree = "<group>"; };
+		C21588A51DE9E90200B548D2 /* MessagePackTrueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackTrueTests.swift; path = Formats/MessagePackTrueTests.swift; sourceTree = "<group>"; };
+		C2161E301DED9D980024F279 /* MessagePackMapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackMapTests.swift; path = Formats/MessagePackMapTests.swift; sourceTree = "<group>"; };
+		C2161E321DEDA1580024F279 /* MessagePackStdLibExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackStdLibExt.swift; sourceTree = "<group>"; };
+		C2161E3B1DEDB30B0024F279 /* MessagePackStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackStringTests.swift; path = Formats/MessagePackStringTests.swift; sourceTree = "<group>"; };
+		C27C495B1DF03274008941BF /* MessagePackArray16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackArray16.swift; sourceTree = "<group>"; };
+		C27C495C1DF03274008941BF /* MessagePackArray32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackArray32.swift; sourceTree = "<group>"; };
+		C27C495D1DF03274008941BF /* MessagePackFixArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFixArray.swift; sourceTree = "<group>"; };
+		C27C495E1DF03274008941BF /* MessagePackGenericArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackGenericArray.swift; sourceTree = "<group>"; };
+		C27C49601DF03274008941BF /* MessagePackBin16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackBin16.swift; sourceTree = "<group>"; };
+		C27C49611DF03274008941BF /* MessagePackBin32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackBin32.swift; sourceTree = "<group>"; };
+		C27C49621DF03274008941BF /* MessagePackBin8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackBin8.swift; sourceTree = "<group>"; };
+		C27C49631DF03274008941BF /* MessagePackGenericBin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackGenericBin.swift; sourceTree = "<group>"; };
+		C27C49651DF03274008941BF /* MessagePackFalse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFalse.swift; sourceTree = "<group>"; };
+		C27C49661DF03274008941BF /* MessagePackTrue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackTrue.swift; sourceTree = "<group>"; };
+		C27C49681DF03274008941BF /* MessagePackFloat32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFloat32.swift; sourceTree = "<group>"; };
+		C27C49691DF03274008941BF /* MessagePackFloat64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFloat64.swift; sourceTree = "<group>"; };
+		C27C496B1DF03274008941BF /* MessagePackInt16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackInt16.swift; sourceTree = "<group>"; };
+		C27C496C1DF03274008941BF /* MessagePackInt32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackInt32.swift; sourceTree = "<group>"; };
+		C27C496D1DF03274008941BF /* MessagePackInt64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackInt64.swift; sourceTree = "<group>"; };
+		C27C496E1DF03274008941BF /* MessagePackInt8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackInt8.swift; sourceTree = "<group>"; };
+		C27C496F1DF03274008941BF /* MessagePackNegativeFixint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackNegativeFixint.swift; sourceTree = "<group>"; };
+		C27C49711DF03274008941BF /* MessagePackFixMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFixMap.swift; sourceTree = "<group>"; };
+		C27C49721DF03274008941BF /* MessagePackGenericMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackGenericMap.swift; sourceTree = "<group>"; };
+		C27C49731DF03274008941BF /* MessagePackMap16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackMap16.swift; sourceTree = "<group>"; };
+		C27C49741DF03274008941BF /* MessagePackMap32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackMap32.swift; sourceTree = "<group>"; };
+		C27C49761DF03274008941BF /* MessagePackNil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackNil.swift; sourceTree = "<group>"; };
+		C27C49781DF03274008941BF /* MessagePackFixString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackFixString.swift; sourceTree = "<group>"; };
+		C27C49791DF03274008941BF /* MessagePackGenericString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackGenericString.swift; sourceTree = "<group>"; };
+		C27C497A1DF03274008941BF /* MessagePackString16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackString16.swift; sourceTree = "<group>"; };
+		C27C497B1DF03274008941BF /* MessagePackString32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackString32.swift; sourceTree = "<group>"; };
+		C27C497C1DF03274008941BF /* MessagePackString8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackString8.swift; sourceTree = "<group>"; };
+		C27C497E1DF03274008941BF /* MessagePackPositiveFixint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackPositiveFixint.swift; sourceTree = "<group>"; };
+		C27C497F1DF03274008941BF /* MessagePackUInt16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackUInt16.swift; sourceTree = "<group>"; };
+		C27C49801DF03274008941BF /* MessagePackUInt32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackUInt32.swift; sourceTree = "<group>"; };
+		C27C49811DF03274008941BF /* MessagePackUInt64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackUInt64.swift; sourceTree = "<group>"; };
+		C27C49821DF03274008941BF /* MessagePackUInt8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackUInt8.swift; sourceTree = "<group>"; };
+		C27C49C31DF03AE0008941BF /* MessagePackDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePackDataHelpers.swift; sourceTree = "<group>"; };
+		C29760251DEA7D8800AE2B35 /* MessagePackUIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackUIntTests.swift; path = Formats/MessagePackUIntTests.swift; sourceTree = "<group>"; };
+		C2D80A121DF1839E00159BFB /* MessagePackIntTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackIntTests.swift; path = Formats/MessagePackIntTests.swift; sourceTree = "<group>"; };
+		C2D80A141DF1897000159BFB /* MessagePackFloatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackFloatTests.swift; path = Formats/MessagePackFloatTests.swift; sourceTree = "<group>"; };
+		C2D80A161DF18D8A00159BFB /* MessagePackBinTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackBinTests.swift; path = Formats/MessagePackBinTests.swift; sourceTree = "<group>"; };
+		C2DE603A1DEAD59E0096FB11 /* MessagePackArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessagePackArrayTests.swift; path = Formats/MessagePackArrayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C215886C1DE9D99100B548D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21588761DE9D99200B548D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C215887A1DE9D99200B548D2 /* MessagePack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C21588661DE9D99100B548D2 = {
+			isa = PBXGroup;
+			children = (
+				C21588721DE9D99100B548D2 /* MessagePack */,
+				C215887D1DE9D99200B548D2 /* MessagePackTests */,
+				C21588711DE9D99100B548D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C21588711DE9D99100B548D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21588701DE9D99100B548D2 /* MessagePack.framework */,
+				C21588791DE9D99200B548D2 /* MessagePackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21588721DE9D99100B548D2 /* MessagePack */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49591DF03274008941BF /* Formats */,
+				C2161E321DEDA1580024F279 /* MessagePackStdLibExt.swift */,
+				C215888A1DE9D9A700B548D2 /* MessagePack.swift */,
+				C215888C1DE9DA1A00B548D2 /* MessagePackFormat.swift */,
+				C215889B1DE9E68000B548D2 /* MessagePackError.swift */,
+				C27C49C31DF03AE0008941BF /* MessagePackDataHelpers.swift */,
+				C21588731DE9D99100B548D2 /* MessagePack.h */,
+				C21588741DE9D99100B548D2 /* Info.plist */,
+			);
+			path = MessagePack;
+			sourceTree = "<group>";
+		};
+		C215887D1DE9D99200B548D2 /* MessagePackTests */ = {
+			isa = PBXGroup;
+			children = (
+				C21588971DE9E23500B548D2 /* Formats */,
+				C215887E1DE9D99200B548D2 /* MessagePackTests.swift */,
+				C21588801DE9D99200B548D2 /* Info.plist */,
+			);
+			path = MessagePackTests;
+			sourceTree = "<group>";
+		};
+		C21588971DE9E23500B548D2 /* Formats */ = {
+			isa = PBXGroup;
+			children = (
+				C21588A41DE9E90200B548D2 /* MessagePackFalseTests.swift */,
+				C21588A51DE9E90200B548D2 /* MessagePackTrueTests.swift */,
+				C21588951DE9E23000B548D2 /* MessagePackNilTests.swift */,
+				C29760251DEA7D8800AE2B35 /* MessagePackUIntTests.swift */,
+				C2DE603A1DEAD59E0096FB11 /* MessagePackArrayTests.swift */,
+				C2161E301DED9D980024F279 /* MessagePackMapTests.swift */,
+				C2161E3B1DEDB30B0024F279 /* MessagePackStringTests.swift */,
+				C2D80A121DF1839E00159BFB /* MessagePackIntTests.swift */,
+				C2D80A141DF1897000159BFB /* MessagePackFloatTests.swift */,
+				C2D80A161DF18D8A00159BFB /* MessagePackBinTests.swift */,
+			);
+			name = Formats;
+			sourceTree = "<group>";
+		};
+		C27C49591DF03274008941BF /* Formats */ = {
+			isa = PBXGroup;
+			children = (
+				C27C495A1DF03274008941BF /* array */,
+				C27C495F1DF03274008941BF /* bin */,
+				C27C49641DF03274008941BF /* bool */,
+				C27C49671DF03274008941BF /* float */,
+				C27C496A1DF03274008941BF /* int */,
+				C27C49701DF03274008941BF /* map */,
+				C27C49751DF03274008941BF /* nil */,
+				C27C49771DF03274008941BF /* string */,
+				C27C497D1DF03274008941BF /* uint */,
+			);
+			path = Formats;
+			sourceTree = "<group>";
+		};
+		C27C495A1DF03274008941BF /* array */ = {
+			isa = PBXGroup;
+			children = (
+				C27C495E1DF03274008941BF /* MessagePackGenericArray.swift */,
+				C27C495B1DF03274008941BF /* MessagePackArray16.swift */,
+				C27C495C1DF03274008941BF /* MessagePackArray32.swift */,
+				C27C495D1DF03274008941BF /* MessagePackFixArray.swift */,
+			);
+			path = array;
+			sourceTree = "<group>";
+		};
+		C27C495F1DF03274008941BF /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49631DF03274008941BF /* MessagePackGenericBin.swift */,
+				C27C49621DF03274008941BF /* MessagePackBin8.swift */,
+				C27C49601DF03274008941BF /* MessagePackBin16.swift */,
+				C27C49611DF03274008941BF /* MessagePackBin32.swift */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		C27C49641DF03274008941BF /* bool */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49651DF03274008941BF /* MessagePackFalse.swift */,
+				C27C49661DF03274008941BF /* MessagePackTrue.swift */,
+			);
+			path = bool;
+			sourceTree = "<group>";
+		};
+		C27C49671DF03274008941BF /* float */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49681DF03274008941BF /* MessagePackFloat32.swift */,
+				C27C49691DF03274008941BF /* MessagePackFloat64.swift */,
+			);
+			path = float;
+			sourceTree = "<group>";
+		};
+		C27C496A1DF03274008941BF /* int */ = {
+			isa = PBXGroup;
+			children = (
+				C27C496F1DF03274008941BF /* MessagePackNegativeFixint.swift */,
+				C27C496E1DF03274008941BF /* MessagePackInt8.swift */,
+				C27C496B1DF03274008941BF /* MessagePackInt16.swift */,
+				C27C496C1DF03274008941BF /* MessagePackInt32.swift */,
+				C27C496D1DF03274008941BF /* MessagePackInt64.swift */,
+			);
+			path = int;
+			sourceTree = "<group>";
+		};
+		C27C49701DF03274008941BF /* map */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49721DF03274008941BF /* MessagePackGenericMap.swift */,
+				C27C49711DF03274008941BF /* MessagePackFixMap.swift */,
+				C27C49731DF03274008941BF /* MessagePackMap16.swift */,
+				C27C49741DF03274008941BF /* MessagePackMap32.swift */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		C27C49751DF03274008941BF /* nil */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49761DF03274008941BF /* MessagePackNil.swift */,
+			);
+			path = nil;
+			sourceTree = "<group>";
+		};
+		C27C49771DF03274008941BF /* string */ = {
+			isa = PBXGroup;
+			children = (
+				C27C49791DF03274008941BF /* MessagePackGenericString.swift */,
+				C27C49781DF03274008941BF /* MessagePackFixString.swift */,
+				C27C497C1DF03274008941BF /* MessagePackString8.swift */,
+				C27C497A1DF03274008941BF /* MessagePackString16.swift */,
+				C27C497B1DF03274008941BF /* MessagePackString32.swift */,
+			);
+			path = string;
+			sourceTree = "<group>";
+		};
+		C27C497D1DF03274008941BF /* uint */ = {
+			isa = PBXGroup;
+			children = (
+				C27C497E1DF03274008941BF /* MessagePackPositiveFixint.swift */,
+				C27C49821DF03274008941BF /* MessagePackUInt8.swift */,
+				C27C497F1DF03274008941BF /* MessagePackUInt16.swift */,
+				C27C49801DF03274008941BF /* MessagePackUInt32.swift */,
+				C27C49811DF03274008941BF /* MessagePackUInt64.swift */,
+			);
+			path = uint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C215886D1DE9D99100B548D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21588811DE9D99200B548D2 /* MessagePack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C215886F1DE9D99100B548D2 /* MessagePack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21588841DE9D99200B548D2 /* Build configuration list for PBXNativeTarget "MessagePack" */;
+			buildPhases = (
+				C215886B1DE9D99100B548D2 /* Sources */,
+				C215886C1DE9D99100B548D2 /* Frameworks */,
+				C215886D1DE9D99100B548D2 /* Headers */,
+				C215886E1DE9D99100B548D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagePack;
+			productName = MessagePack;
+			productReference = C21588701DE9D99100B548D2 /* MessagePack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C21588781DE9D99200B548D2 /* MessagePackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21588871DE9D99200B548D2 /* Build configuration list for PBXNativeTarget "MessagePackTests" */;
+			buildPhases = (
+				C21588751DE9D99200B548D2 /* Sources */,
+				C21588761DE9D99200B548D2 /* Frameworks */,
+				C21588771DE9D99200B548D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C215887C1DE9D99200B548D2 /* PBXTargetDependency */,
+			);
+			name = MessagePackTests;
+			productName = MessagePackTests;
+			productReference = C21588791DE9D99200B548D2 /* MessagePackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C21588671DE9D99100B548D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sergey Ukrainskiy";
+				TargetAttributes = {
+					C215886F1DE9D99100B548D2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5N48NDV776;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+					};
+					C21588781DE9D99200B548D2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5N48NDV776;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C215886A1DE9D99100B548D2 /* Build configuration list for PBXProject "MessagePack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C21588661DE9D99100B548D2;
+			productRefGroup = C21588711DE9D99100B548D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C215886F1DE9D99100B548D2 /* MessagePack */,
+				C21588781DE9D99200B548D2 /* MessagePackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C215886E1DE9D99100B548D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21588771DE9D99200B548D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C215886B1DE9D99100B548D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27C49AB1DF03274008941BF /* MessagePackMap32.swift in Sources */,
+				C27C499B1DF03274008941BF /* MessagePackInt16.swift in Sources */,
+				C27C49911DF03274008941BF /* MessagePackGenericBin.swift in Sources */,
+				C27C49BB1DF03274008941BF /* MessagePackUInt16.swift in Sources */,
+				C27C49B91DF03274008941BF /* MessagePackPositiveFixint.swift in Sources */,
+				C27C49AF1DF03274008941BF /* MessagePackFixString.swift in Sources */,
+				C27C49971DF03274008941BF /* MessagePackFloat32.swift in Sources */,
+				C27C49891DF03274008941BF /* MessagePackGenericArray.swift in Sources */,
+				C27C498D1DF03274008941BF /* MessagePackBin32.swift in Sources */,
+				C27C49AD1DF03274008941BF /* MessagePackNil.swift in Sources */,
+				C27C49A71DF03274008941BF /* MessagePackGenericMap.swift in Sources */,
+				C27C49B11DF03274008941BF /* MessagePackGenericString.swift in Sources */,
+				C27C498B1DF03274008941BF /* MessagePackBin16.swift in Sources */,
+				C27C49BD1DF03274008941BF /* MessagePackUInt32.swift in Sources */,
+				C27C49A31DF03274008941BF /* MessagePackNegativeFixint.swift in Sources */,
+				C27C49B31DF03274008941BF /* MessagePackString16.swift in Sources */,
+				C215888B1DE9D9A700B548D2 /* MessagePack.swift in Sources */,
+				C27C498F1DF03274008941BF /* MessagePackBin8.swift in Sources */,
+				C27C49A51DF03274008941BF /* MessagePackFixMap.swift in Sources */,
+				C27C49991DF03274008941BF /* MessagePackFloat64.swift in Sources */,
+				C27C49C41DF03AE0008941BF /* MessagePackDataHelpers.swift in Sources */,
+				C27C49951DF03274008941BF /* MessagePackTrue.swift in Sources */,
+				C2161E331DEDA1580024F279 /* MessagePackStdLibExt.swift in Sources */,
+				C27C49A11DF03274008941BF /* MessagePackInt8.swift in Sources */,
+				C27C49B51DF03274008941BF /* MessagePackString32.swift in Sources */,
+				C27C49931DF03274008941BF /* MessagePackFalse.swift in Sources */,
+				C27C49C11DF03274008941BF /* MessagePackUInt8.swift in Sources */,
+				C215888D1DE9DA1A00B548D2 /* MessagePackFormat.swift in Sources */,
+				C27C499F1DF03274008941BF /* MessagePackInt64.swift in Sources */,
+				C27C49A91DF03274008941BF /* MessagePackMap16.swift in Sources */,
+				C27C499D1DF03274008941BF /* MessagePackInt32.swift in Sources */,
+				C27C49BF1DF03274008941BF /* MessagePackUInt64.swift in Sources */,
+				C27C49871DF03274008941BF /* MessagePackFixArray.swift in Sources */,
+				C27C49851DF03274008941BF /* MessagePackArray32.swift in Sources */,
+				C215889C1DE9E68000B548D2 /* MessagePackError.swift in Sources */,
+				C27C49831DF03274008941BF /* MessagePackArray16.swift in Sources */,
+				C27C49B71DF03274008941BF /* MessagePackString8.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21588751DE9D99200B548D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D80A131DF1839E00159BFB /* MessagePackIntTests.swift in Sources */,
+				C21588961DE9E23000B548D2 /* MessagePackNilTests.swift in Sources */,
+				C2161E311DED9D980024F279 /* MessagePackMapTests.swift in Sources */,
+				C21588A91DE9E90200B548D2 /* MessagePackTrueTests.swift in Sources */,
+				C2161E3C1DEDB30B0024F279 /* MessagePackStringTests.swift in Sources */,
+				C2D80A171DF18D8A00159BFB /* MessagePackBinTests.swift in Sources */,
+				C2DE603B1DEAD59E0096FB11 /* MessagePackArrayTests.swift in Sources */,
+				C215887F1DE9D99200B548D2 /* MessagePackTests.swift in Sources */,
+				C2D80A151DF1897000159BFB /* MessagePackFloatTests.swift in Sources */,
+				C21588A71DE9E90200B548D2 /* MessagePackFalseTests.swift in Sources */,
+				C29760261DEA7D8800AE2B35 /* MessagePackUIntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C215887C1DE9D99200B548D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C215886F1DE9D99100B548D2 /* MessagePack */;
+			targetProxy = C215887B1DE9D99200B548D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C21588821DE9D99200B548D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C21588831DE9D99200B548D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C21588851DE9D99200B548D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5N48NDV776;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MessagePack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukrainskiysergey.MessagePack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C21588861DE9D99200B548D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5N48NDV776;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MessagePack/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukrainskiysergey.MessagePack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C21588881DE9D99200B548D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5N48NDV776;
+				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukrainskiysergey.MessagePackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C21588891DE9D99200B548D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5N48NDV776;
+				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ukrainskiysergey.MessagePackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C215886A1DE9D99100B548D2 /* Build configuration list for PBXProject "MessagePack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21588821DE9D99200B548D2 /* Debug */,
+				C21588831DE9D99200B548D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21588841DE9D99200B548D2 /* Build configuration list for PBXNativeTarget "MessagePack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21588851DE9D99200B548D2 /* Debug */,
+				C21588861DE9D99200B548D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21588871DE9D99200B548D2 /* Build configuration list for PBXNativeTarget "MessagePackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21588881DE9D99200B548D2 /* Debug */,
+				C21588891DE9D99200B548D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C21588671DE9D99100B548D2 /* Project object */;
+}
